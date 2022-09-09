@@ -1,9 +1,9 @@
-package com.example.taskify;
+package com.example.taskify.repositories;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import java.util.Optional;
+import com.example.taskify.models.Student;
 
 public interface StudentRepository extends MongoRepository<Student, String> {
-    Optional<Student> findStudentByEmail(String email);
+//    Optional<Student> findStudentByEmail(String email);
 }
